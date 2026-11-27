@@ -1,0 +1,22 @@
+pkgbase = cros-modp_b64
+	pkgdesc = ChromiumOS modp_b64 high-performance Base64 encoder/decoder static library
+	pkgver = 0.0.1
+	pkgrel = 1
+	url = https://chromium.googlesource.com/aosp/platform/external/modp_b64
+	arch = x86_64
+	license = BSD-3-Clause
+	makedepends = cros-common-mk
+	makedepends = gn
+	makedepends = ninja
+	makedepends = clang
+	makedepends = lld
+	makedepends = llvm
+	makedepends = git
+	depends = gcc-libs
+	depends = glibc
+	options = staticlibs
+	options = !lto
+	source = modp_b64::git+https://chromium.googlesource.com/aosp/platform/external/modp_b64.git#branch=master
+	sha256sums = SKIP
+
+pkgname = cros-modp_b64
